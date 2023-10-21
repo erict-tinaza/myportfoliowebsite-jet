@@ -1,12 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*html'],
-  darkMode:'class',
+  content: ["./*html"],
+  darkMode: "class",
   theme: {
-    extend: {},
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    extend: {
+      colors: {
+        lightPurple: "#AC90EC",
+      },
+    },
+    plugins: [require("flowbite/plugin")],
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-}
-
+};
