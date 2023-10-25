@@ -1,11 +1,30 @@
+// import { annotate } from 'https://unpkg.com/rough-notation?module';
+// import { annotate } from 'rough-notation';
 const hamburgerMenu = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('#menu');
+const projectBtn = document.querySelector('#projectEl');
 
+// Rough Notation
+// const e = document.getElementById('one');
+// const annotation = annotate(e, { type: 'box' });
+// annotation.show();
+// console.log(e)
+// ################
+
+// ##Hamburger Menu
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('open');
     mobileMenu.classList.toggle('flex');
     mobileMenu.classList.toggle('hidden');
 })
+
+projectBtn.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('open');
+    mobileMenu.classList.toggle('flex');
+    mobileMenu.classList.toggle('hidden');
+})
+
+// ##END
 
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
