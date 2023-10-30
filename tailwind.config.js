@@ -27,6 +27,7 @@ module.exports = {
       },
     },
     plugins: [require("flowbite/plugin")],
+            
     animation: {
       type: 'type 2.7s ease-out .8s infinite alternate both',
     },
